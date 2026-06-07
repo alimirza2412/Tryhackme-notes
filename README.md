@@ -37,7 +37,7 @@ tryhackme-notes/
 
 | Module | Status | Notes |
 |--------|--------|-------|
-| [Linux Fundamentals](01-Cybersecurity-101/Linux-Fundamentals/) | ✅ Done | Basic Linux commands, file system, permissions |
+| [Linux Fundamentals](Cybersecurity-101/Linux-Fundamentals/) | ✅ Done | Basic Linux commands, file system, permissions |
 | [Windows & AD Fundamentals](01-Cybersecurity-101/Windows-AD-Fundamentals/) | 🔄 In Progress | |
 | [Command Line](01-Cybersecurity-101/Command-Line/) | 🔄 In Progress | |
 | [Network Fundamentals](01-Cybersecurity-101/Network-Fundamentals/) | 🔄 In Progress | |
