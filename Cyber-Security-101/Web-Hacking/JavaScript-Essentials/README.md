@@ -20,7 +20,7 @@
 
 ## 🌐 JavaScript Overview
 
-JavaScript ek **interpreted language** hai — matlab browser (Chrome, Firefox, etc.) code ko seedha read karke execute kar deta hai, pehle compile karne ki zaroorat nahi hoti.
+JavaScript is an **interpreted language** — meaning the browser (Chrome, Firefox, etc.) reads and executes the code directly without needing to compile it first.
 
 ```javascript
 // First Program
@@ -48,15 +48,15 @@ greet("Bob");
 
 ## 📦 Variables & Data Types
 
-Variables ek container ki tarah hain jo data store karte hain — jaise kisi bucket par label lagana taake baad mein aasaani se refer kar sako.
+Variables are containers that store data values — think of labeling a bucket so you can easily reference it later.
 
 ### Variable Declaration
 
 | Keyword | Description |
 |---------|-------------|
-| `var`   | Old method — avoid karna chahiye |
-| `let`   | Modern method — jab value change karni ho |
-| `const` | Modern method — jab value fix ho, change na karni ho |
+| `var`   | Old method — avoid using it |
+| `let`   | Modern method — use when the value needs to change |
+| `const` | Modern method — use when the value stays fixed |
 
 ### Data Types
 
@@ -68,9 +68,9 @@ Variables ek container ki tarah hain jo data store karte hain — jaise kisi buc
 
 ## 🔁 Functions & Loops
 
-**Function** ek block of code hai jo ek specific kaam karta hai. Jab same kaam baar baar karna ho, toh function banao.
+A **function** is a block of code designed to perform a specific task. When you need to do the same thing multiple times, put it in a function.
 
-**Loop** ek code block ko baar baar run karta hai jab tak condition true ho.
+A **loop** runs a block of code repeatedly as long as a condition is true.
 
 ```javascript
 function PrintResult(rollNum) {
@@ -88,11 +88,11 @@ for (let i = 0; i < rollNumbers.length; i++) {
 
 ## 🔗 Integrating JavaScript in HTML
 
-JavaScript ko HTML mein do tarikon se integrate kar sakte hain:
+There are two ways to integrate JavaScript into HTML:
 
 ### 1. Internal JavaScript
 
-JavaScript same HTML file mein `<script>` tag ke andar likhi jaati hai.
+JavaScript is written inside the same HTML file using the `<script>` tag.
 
 ```html
 <!DOCTYPE html>
@@ -116,28 +116,28 @@ JavaScript same HTML file mein `<script>` tag ke andar likhi jaati hai.
 
 ### 2. External JavaScript
 
-JavaScript alag `.js` file mein likhi jaati hai aur HTML usse link karta hai.
+JavaScript is written in a separate `.js` file and linked to the HTML file.
 
 ```html
 <!-- HTML File -->
 <script src="script.js"></script>
 ```
 
-> ✅ Real websites aur large projects mein **External JS** use hoti hai — HTML pehle render hoti hai aur JS alag se load hoti hai better performance ke liye.
+> ✅ Real websites and large projects use **External JS** — HTML renders first and JavaScript loads separately for better performance.
 
 ---
 
 ## 🚨 Abusing Dialogue Functions
 
-**Concept:** Attacker legitimate dialogue boxes (pop-ups, prompts) ko use karta hai taake user ko trick karke koi harmful action karwa sake. Ye pop-ups asli software ka part lagte hain, isliye user trust kar leta hai.
+**Concept:** An attacker uses legitimate dialogue boxes (pop-ups, prompts) to trick users into performing harmful actions. Since these pop-ups look like part of real software, users tend to trust them.
 
-JavaScript 3 built-in dialogue functions provide karta hai:
+JavaScript provides 3 built-in dialogue functions:
 
 | Function    | Description |
 |-------------|-------------|
-| `alert()`   | Sirf ek message dikhata hai — user sirf OK click kar sakta hai |
-| `prompt()`  | User se input leta hai |
-| `confirm()` | Do options deta hai — OK (true) ya Cancel (false) |
+| `alert()`   | Shows a message — user can only click OK |
+| `prompt()`  | Takes input from the user |
+| `confirm()` | Shows two options — OK (true) or Cancel (false) |
 
 ```javascript
 // Alert
@@ -151,9 +151,9 @@ alert("Hello " + name);
 confirm("Are you sure?");
 ```
 
-### ⚠️ How Hackers Exploit This — DOS Attack Example
+### ⚠️ How Hackers Exploit This — DoS Attack Example
 
-Attacker ek HTML file email karta hai. User usse open karta hai aur 500 baar popup aata hai — yeh ek simple **Denial of Service (DoS)** attack hai.
+An attacker sends an HTML file via email. When the user opens it, a popup appears 500 times — this is a simple **Denial of Service (DoS)** attack.
 
 ```html
 <script>
@@ -166,6 +166,8 @@ Attacker ek HTML file email karta hai. User usse open karta hai aur 500 baar pop
 ---
 
 ## 🔓 Bypassing Control Flow Statements
+
+Control flow statements like `if/else`, `switch`, and loops control how code executes. Attackers can bypass these when they are implemented only on the client side.
 
 ### Age Verification Example
 
@@ -191,21 +193,21 @@ if (username === "admin" && password === "1234") {
 }
 ```
 
-**Problems:**
-- Password JS mein visible hai — browser ka "View Source" se dekha ja sakta hai
-- Hacker browser console mein variable directly change kar sakta hai
-- Koi server-side verification nahi hai
+**Why this is dangerous:**
+- The password is visible in JS — anyone can use "View Source" in the browser to see it
+- A hacker can directly change variables in the browser console
+- There is no server-side verification at all
 
 ### ✅ Security Lesson
 
-> Sensitive data (login/password checks) kabhi bhi client-side JS mein nahi likhni chahiye.  
-> Hamesha **server-side authentication** use karo — PHP, Python, Node.js, etc.
+> Sensitive checks like login and password validation must **never** be written in client-side JavaScript.  
+> Always use **server-side authentication** — PHP, Python, Node.js, etc.
 
 ---
 
 ## 📦 Exploring Minified Files
 
-**Minification:** JS file se spaces, line breaks, aur comments hata diye jaate hain taake file ka size chhota ho aur browser mein jaldi load ho.
+**Minification** removes spaces, line breaks, and comments from JS files to reduce file size and make the browser load them faster.
 
 ```javascript
 // Normal Code — Human Readable
@@ -214,13 +216,13 @@ function hi() {
 }
 hi();
 
-// Minified — Same kaam, chhoti file
+// Minified — Same functionality, smaller file
 function hi(){alert("Welcome to THM")}hi();
 ```
 
 ### 🔒 Obfuscation
 
-Code ko intentionally mushkil banaya jaata hai taake insaan aasaani se read na kar sake — ek tarah ka encryption.
+Obfuscation intentionally makes code difficult for humans to read and understand — essentially encrypting the logic.
 
 ```javascript
 // Original
@@ -228,11 +230,11 @@ function hi() {
   alert("Welcome to THM");
 }
 
-// Obfuscated — same kaam, lekin samajhna mushkil
+// Obfuscated — same functionality, but hard to understand
 (function(_0x114713,_0x2246f2){var _0x51a830=_0x33bf...
 ```
 
-> 🛠️ Tools: Websites available hain jo JS ko obfuscate aur deobfuscate karte hain.
+> 🛠️ There are online tools available to both **obfuscate** and **deobfuscate** JavaScript code.
 
 ---
 
@@ -240,21 +242,21 @@ function hi() {
 
 | Practice | Why It Matters |
 |----------|----------------|
-| **Client-side validation par rely mat karo** | Hacker browser mein JS dekh aur manipulate kar sakta hai |
-| **Unverified libraries mat use karo** | Malicious library puri website ka control le sakti hai |
-| **Secrets (passwords, API keys) code mein mat likho** | View Source se visible ho jaate hain |
-| **Production mein hamesha Minify aur Obfuscate karo** | Source code ko thoda protect karta hai |
+| **Never rely only on client-side validation** | Hackers can view and manipulate JS directly in the browser |
+| **Avoid unverified third-party libraries** | A malicious library can gain full control of your website |
+| **Never write secrets in code** | Passwords and API keys are visible via View Source |
+| **Always minify and obfuscate for production** | Adds a layer of protection to your source code |
 
 ---
 
 ## 🧠 Key Takeaways
 
-- JavaScript browser mein run hoti hai — **attacker directly access kar sakta hai**
-- Login aur sensitive logic hamesha **server-side** par ho
-- Minification performance ke liye hai, security ke liye nahi
-- Obfuscation code ko harder banata hai, impossible nahi
+- JavaScript runs in the browser — **attackers can access it directly**
+- Login and sensitive logic must always live on the **server side**
+- Minification is for **performance**, not security
+- Obfuscation makes code **harder** to read, not impossible
 
 ---
 
-> 📌 *Ye notes TryHackMe JavaScript Essentials module par based hain.*  
-> 🔗 Profile: [TryHackMe](https://tryhackme.com)
+> 📌 *These notes are based on the TryHackMe JavaScript Essentials module.*  
+> 🔗 [TryHackMe Profile](https://tryhackme.com)
