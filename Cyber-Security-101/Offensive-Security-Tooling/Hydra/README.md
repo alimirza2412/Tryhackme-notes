@@ -118,7 +118,7 @@ hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.112.162.205 \
 
 ### 🖼️ Proof Screenshot
 
-![Flag 1 - Web Form](./flag_1.png)
+https://github.com/alimirza2412/Tryhackme-notes/blob/87b1e8edc70f4024c7f14a1692de8d7c29da19ae/Cyber-Security-101/Offensive-Security-Tooling/Hydra/flag%201.png
 
 > 🏁 **Flag 1:** `THM{2673a7dd116de68e85c48ec0b1f2612e}`
 
