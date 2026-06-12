@@ -144,7 +144,7 @@ cat flag2.txt
 
 ### 🖼️ Proof Screenshot
 
-![Flag 2 - SSH](./flag_2.png)
+![Flag 2 - SSH](https://github.com/alimirza2412/Tryhackme-notes/blob/b9ea9c5ce6d3a7cb998945bfd606cf524ce7c2ff/Cyber-Security-101/Offensive-Security-Tooling/Hydra/save.png)
 
 > 🏁 **Flag 2:** `THM{c8eeb0468febbadea859baeb33b2541b}`
 
