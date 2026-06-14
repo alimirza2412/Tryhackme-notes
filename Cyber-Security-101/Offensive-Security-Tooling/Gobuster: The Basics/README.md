@@ -231,7 +231,7 @@ gobuster vhost -u "http://10.113.166.64" \
 
 **Results:**
 
-![Gobuster vhost enumeration results](gobuster_task_4.png)
+![Gobuster vhost enumeration results](https://github.com/alimirza2412/Tryhackme-notes/blob/ae383cc4d68e9286fc4a9aaf4b9c724ca48e7a7b/Cyber-Security-101/Offensive-Security-Tooling/Gobuster%3A%20The%20Basics/gobuster%20task%204.png)
 
 | Virtual Host | Status | Size |
 |-------------|--------|------|
