@@ -141,7 +141,7 @@ gobuster dir -u "www.offensivetools.thm" \
 
 **Results:**
 
-![Gobuster dir mode results](gobuster_task_1.png)
+![Gobuster dir mode results](https://github.com/alimirza2412/Tryhackme-notes/blob/68a7fd4667e6f9b4f130cbe78e63b889e39634a3/Cyber-Security-101/Offensive-Security-Tooling/Gobuster%3A%20The%20Basics/gobuster%20task%201.png)
 
 | Directory | Status | Notes |
 |-----------|--------|-------|
