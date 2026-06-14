@@ -172,7 +172,7 @@ gobuster dir -u "www.offensivetools.thm/secret" \
 
 ![Gobuster extension scan finding flag.js](https://github.com/alimirza2412/Tryhackme-notes/blob/f7ff9f7427890452580b4f70486d0247cc9f6c21/Cyber-Security-101/Offensive-Security-Tooling/Gobuster%3A%20The%20Basics/gobuster%20task%202.png)
 
-![Gobuster finished and curl command](gobuster_task_3.png)
+![Gobuster finished and curl command](https://github.com/alimirza2412/Tryhackme-notes/blob/2e7f02cfa3ed0cbac26b7d56494abbf83ac18a07/Cyber-Security-101/Offensive-Security-Tooling/Gobuster%3A%20The%20Basics/gobuster%20task%203.png)
 
 | Path | Status | Notes |
 |------|--------|-------|
