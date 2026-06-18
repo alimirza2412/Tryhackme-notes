@@ -424,7 +424,7 @@ Enter in the input field:
 hello.txt; whoami
 ```
 
-![Command Injection Test - whoami output showing www-data](shell_task_1.png)
+![Command Injection Test - whoami output showing www-data](https://github.com/alimirza2412/Tryhackme-notes/blob/9b30951dc0d2a64a6d5fdebbe4058db8f5a09c23/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task%201.png)
 
 `www-data` appeared ✅ — Command injection is working!
 
