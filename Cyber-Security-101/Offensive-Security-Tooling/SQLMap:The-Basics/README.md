@@ -116,7 +116,7 @@ The `ai` database belongs to the target app.
 sqlmap -u 'http://10.112.153.155/ai/includes/user_login?email=test&password=test' --level=5 -D ai --tables --batch
 ```
 
-![Tables Found](sqlmap_task_2.png)
+![Tables Found](https://github.com/alimirza2412/Tryhackme-notes/blob/05ee4cc9ddd1228f994aa6ea0ff41fb6aa295c97/Cyber-Security-101/Offensive-Security-Tooling/SQLMap%3AThe-Basics/sqlmap%20task%203.png)
 
 **Result:**
 
