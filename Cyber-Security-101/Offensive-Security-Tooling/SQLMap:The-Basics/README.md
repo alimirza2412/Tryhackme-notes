@@ -1,6 +1,6 @@
 # 🗄️ SQLMap — Automated SQL Injection Tool
 
-> **Room:** Jr Penetration Tester Path — SQLMap  
+> **Room:** Cyber Security 101 Path — SQLMap  
 > **Difficulty:** Easy  
 > **Status:** ✅ Completed
 
@@ -55,7 +55,7 @@ The target app was a "ChatAI" login page running on an internal IP:
 http://10.112.153.155/ai/login
 ```
 
-![Login Page](sqlmap_task_1.png)
+![Login Page](https://github.com/alimirza2412/Tryhackme-notes/blob/47e6b384ea69d6c3949847f84ea84265b2ba19cd/Cyber-Security-101/Offensive-Security-Tooling/SQLMap%3AThe-Basics/sqlmap%20task%201.png)
 
 Steps to find the injectable URL:
 1. Right-click → **Inspect** → **Network** tab
