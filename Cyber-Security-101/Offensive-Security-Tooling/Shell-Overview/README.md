@@ -440,7 +440,7 @@ Click the button!
 
 **Step 5 — Shell Received on Attacker Terminal**
 
-![Reverse shell connection received on port 443](shell_task_2.png)
+![Reverse shell connection received on port 443](https://github.com/alimirza2412/Tryhackme-notes/blob/6bf09948c721f0c9faf36e1a8911d5f76b1fd851/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task%202.png)
 
 ```
 Connection received on 10.114.157.52 XXXXX ✅
