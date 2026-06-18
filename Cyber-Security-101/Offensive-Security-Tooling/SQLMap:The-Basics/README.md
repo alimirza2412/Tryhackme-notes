@@ -213,4 +213,4 @@ SQLMap confirms email parameter is injectable
 
 ---
 
-> 📁 Part of [TryHackMe Notes](https://github.com/alimirza2412/Tryhackme-notes) — Jr Penetration Tester Path
+> 📁 Part of [TryHackMe Notes](https://github.com/alimirza2412/Tryhackme-notes) — Cyber Security Path
