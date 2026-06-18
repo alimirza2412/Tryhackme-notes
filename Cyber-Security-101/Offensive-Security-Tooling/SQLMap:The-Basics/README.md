@@ -93,7 +93,7 @@ SQLMap found multiple injection types:
 sqlmap -u 'http://10.112.153.155/ai/includes/user_login?email=test&password=test' --level=5 --dbs --batch
 ```
 
-![Databases Found](sqlmap_task_4.png)
+![Databases Found](https://github.com/alimirza2412/Tryhackme-notes/blob/94be2ec56353fb659ad738bc1b867f778d618655/Cyber-Security-101/Offensive-Security-Tooling/SQLMap%3AThe-Basics/sqlmap%20task%202.png)
 
 **Result — 6 databases found:**
 
