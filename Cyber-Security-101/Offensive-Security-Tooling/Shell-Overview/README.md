@@ -454,7 +454,7 @@ ls /
 cat /flag.txt
 ```
 
-![Flag found via cat /flag.txt — THM{...}](https://github.com/alimirza2412/Tryhackme-notes/blob/4799e00355135c47be1bfa1ccc9cb2a7c1e0faad/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task%205.png)
+![Flag found via cat /flag.txt — THM{...}](https://github.com/alimirza2412/Tryhackme-notes/blob/1043c077a43bedaa4346e667ea73c87b2e9a6905/Cyber-Security-101/Offensive-Security-Tooling/Shell-Overview/shell%20task3.png)
 
 ```
 THM{0f28b3e1b00becf15d01a1151baf10fd713bc625}
