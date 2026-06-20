@@ -19,7 +19,6 @@
 - [General Utility Commands](#-general-utility-commands)
 - [Key Flags Reference](#-key-flags-reference)
 - [⚡ Quick Cheatsheet](#-quick-cheatsheet)
-- [Room Answers](#-room-answers)
 
 ---
 
