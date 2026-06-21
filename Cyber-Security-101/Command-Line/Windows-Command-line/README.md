@@ -322,7 +322,6 @@ shutdown /a          # Abort a scheduled shutdown
 
 ## ⚡ Quick Cheatsheet
 
-> Copy-paste ready — saare important commands ek jagah
 
 ### 🖥️ System Info
 
